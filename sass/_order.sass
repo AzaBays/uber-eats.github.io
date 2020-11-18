@@ -1,0 +1,9 @@
+@import 'mixins'
+
+#order
+    height: 750px
+    margin-top: 200px
+    background: url(../img/dessert-plate.png) no-repeat left center, url(../img/mashroom.png) no-repeat 70% -20px, url(../img/dinner-plate.png) no-repeat right center, url(../img/wave-line.png) no-repeat center 80%, url(../img/wave-line.png) no-repeat center 82%
+    +flexible(center, center)
+    & .section-slogan_text
+        transform: translateX(calc( 50% - 50px ))

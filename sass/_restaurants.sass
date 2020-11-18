@@ -1,0 +1,18 @@
+@import 'mixins'
+
+#restaurants
+    padding: 50px 0
+    position: relative
+    background: url(../img/cucumber-slices.png) no-repeat -120px 130%, url(../img/broken-egg.png) no-repeat right top, url(../img/wave-line.png) no-repeat 500px 200px, url(../img/wave-line.png) no-repeat 500px 220px
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 110% 
+        background: #f4f5f7
+        z-index: -1
+        transform: skewY(-12deg)
+        transform-origin: 35% center
+    & .container
+        +flexible(space-between, center)
+

@@ -1,0 +1,31 @@
+@import 'mixins'
+
+header
+    width: 100%
+    height: 100vh
+    background-color: transparent
+    background-image: url(../img/onion.png), url(../img/parsley-lips.png), url(../img/fruits-plate.png), url(../img/basil-lips.png)
+    background-repeat: no-repeat
+    background-position: 40% 60%, 44% 48%, right top, 70% bottom
+    position: relative
+    +flexible(flex-start, center)
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100% 
+        background: #f4f5f7
+        z-index: -1
+        transform: skewY(-12deg)
+        transform-origin: left bottom
+    & .header
+        width: 575px
+        position: relative
+        left: 120px
+        &-title
+            width: 475px
+        &-subtitle
+            color: #000000
+            font-size: 21px
+            font-weight: 500
+            line-height: 70px

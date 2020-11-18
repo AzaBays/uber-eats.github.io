@@ -1,0 +1,25 @@
+@import 'mixins'
+
+#find-food
+    padding: 60px 0
+
+.find-food
+    +flexible(space-between, center)
+    &_search
+        margin-left: 60px
+    &_form
+        +flexible(space-between, center)
+        margin-top: 30px
+        & input[type="text"]
+            width: 400px
+            height: 70px
+            border: 1px solid #9b9a9a;
+            border-radius: 10px
+            padding-left: 20px
+            outline: none
+            font-size: 16px
+            font-weight: 500
+            &::placeholder
+                color: #585858
+                font-weight: 500
+                

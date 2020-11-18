@@ -1,0 +1,38 @@
+@import 'mixins'
+
+#services
+    padding: 100px 0
+    position: relative
+    +flexible(center, center)
+    margin-top: 200px
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 142% 
+        top: 0
+        background: #f4f5f7
+        z-index: -1
+        transform: skewY(-12deg)
+        transform-origin: 35% center
+
+.services
+    +flexible(center, flex-start)
+    height: 410px
+    &-line
+        width: 3px
+        height: 100%
+        background: #e5e5e5
+        margin: 0 50px
+    & .service
+        width: 420px
+        height: 100%
+        &-title
+            color: rgb(95, 183, 9)
+            font-weight: 700
+            font-size: 26px
+            margin: 20px 0 35px
+        &-text
+            font-weight: 500
+            line-height: 30px
+            margin-bottom: 35px

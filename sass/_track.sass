@@ -1,0 +1,17 @@
+@import 'mixins'
+
+#track
+    padding: 50px 0
+    position: relative
+    background: url(../img/spice-plate.png) no-repeat 40% 5%, url(../img/sendvich.png) no-repeat 15% 90%, url(../img/ravioli.png) no-repeat 30% bottom
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 110% 
+        background: #f4f5f7
+        z-index: -1
+        transform: skewY(-12deg)
+        transform-origin: 35% center
+    & .container
+        +flexible(space-between, center)
